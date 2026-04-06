@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13b366e8-b1d1-4bc7-98cf-ed46b796b5ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Main.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Assets/Basketball 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Assets/Basketball 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Assets/Basketball 2 Variant.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Assets/Basketball 2 Variant.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Assets/BasketballRing.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Assets/BasketballRing.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/Basketball 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/Basketball 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/Basketball 2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/Basketball 2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/BasketballRing.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/BasketballRing.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/Glass.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/Glass.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/Net.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Materials/Net.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Physics.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Physics/Basketball.physicMaterial" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Physics/Basketball.physicMaterial.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Materials/Ground.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/3D/Materials/Ground.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/InputActions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/InputActions/PlayerControls.inputactions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/InputActions/PlayerControls.inputactions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/Rendering.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/Rendering/New Universal Render Pipeline Asset.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/Rendering/New Universal Render Pipeline Asset.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/Rendering/New Universal Render Pipeline Asset_Renderer.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/Rendering/New Universal Render Pipeline Asset_Renderer.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/Scenes/GameScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/Scenes/GameScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Materials/BasketballRing.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Materials/BasketballRing.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Materials/Glass.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Materials/Glass.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Materials/Net.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Materials/Net.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Prefabs/Net .prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Prefabs/Net .prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Prefabs/Ring.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Built-In/Prefabs/Ring.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Info.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Info/Thank you.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Info/Thank you.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Meshes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Meshes/Net.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Meshes/Net.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Meshes/Ring.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Meshes/Ring.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Scenes/ExampleScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Scenes/ExampleScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_AO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_AO.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_Albedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_Albedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_Height.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_Height.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_Metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_Metallic.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Net_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_AO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_AO.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_Albedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_Albedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_Height.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_Height.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_Metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_Metallic.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MarioParadiso/BasketballRing/Textures/Ring_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/ClusterInputManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/MemorySettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/MultiplayerManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerInputController.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3BzRQ3pHTF1uVlhiUKB8WWirpVm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.4.0f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.4.0f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13b366e8-b1d1-4bc7-98cf-ed46b796b5ba" name="Changes" comment="" />
+      <created>1775489909099</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775489909099</updated>
+      <workItem from="1775489911077" duration="3569000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
