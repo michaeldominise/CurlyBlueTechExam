@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="13b366e8-b1d1-4bc7-98cf-ed46b796b5ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CurlyBlueTechExam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CurlyBlueTechExam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Prefabs/BasketballRing.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main/3D/Basketball/Prefabs/BasketballRing.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Main/3D/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main/3D/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Main/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerPickController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerPickController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Main/Scripts/ShootSystem/ShootSequenceValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main/Scripts/ShootSystem/ShootSequenceValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Player/PlayerInputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main/UI/Prefabs/MainCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main/UI/Prefabs/MainCanvas.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/08bbde0717c941bb815c748c7a9fe703214200/c8/2ff028a8/Mathf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f0abd56018ec4ffb91eb5462c078c4ae9dac00/f5/bf24cfa7/RendererEditorBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/BallSystem/BallScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Main/Scripts/Effects/RimImpactShake.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,6 +59,7 @@
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.35875216&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -126,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1775489909099</updated>
-      <workItem from="1775489911077" duration="37084000" />
+      <workItem from="1775489911077" duration="40971000" />
     </task>
     <servers />
   </component>

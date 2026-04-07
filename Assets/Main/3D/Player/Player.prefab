@@ -24,13 +24,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137820678794379000}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.258819, y: 0, z: 0, w: 0.9659259}
+  m_LocalRotation: {x: -0.5, y: 0, z: 0, w: 0.8660254}
   m_LocalPosition: {x: 0, y: -0.594, z: 2.088}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4517152006871521819}
-  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -60, y: 0, z: 0}
 --- !u!1 &177389673165127333
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,12 +427,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8f43fde152f441d8cf58843c185319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputController
-  walkSpeed: 5
-  sprintSpeed: 10
-  mouseSensitivity: 2
-  smoothTime: 0.05
+  playerBody: {fileID: 1946437471111948269}
   cameraPivot: {fileID: 4517152006871521819}
-  jumpForce: 50
+  moveSpeed: 5
+  sprintMultiplier: 1.5
+  lookSensitivity: 2.2
+  minPitch: -25
+  maxPitch: 15
+  springStrength: 120
+  damping: 20
 --- !u!114 &7365901428338395093
 MonoBehaviour:
   m_ObjectHideFlags: 0

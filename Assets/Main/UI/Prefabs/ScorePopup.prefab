@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08daab9732aca413bb35ca2184325d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScorePopup
-  spawnXPosOffset: {x: -50, y: 50}
+  spawnXPosOffset: {x: -100, y: -100}
   spawnYPosOffset: {x: 0, y: 50}
   duration: 1
   moveSpeed: 50

@@ -4,139 +4,168 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerInputController : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private Transform playerBody;
+    [SerializeField] private Transform cameraPivot;
+
     [Header("Movement")]
-    public float walkSpeed = 5f;
-    public float sprintSpeed = 10f;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float sprintMultiplier = 1.5f;
 
-    [Header("Mouse Look")]
-    public float mouseSensitivity = 2f;
-    public float smoothTime = 0.03f;
-    public Transform cameraPivot;
+    [Header("Look")]
+    [SerializeField] private float lookSensitivity = 2f;
 
-    [Header("Jump")]
-    public float jumpForce = 5f;
+    [Header("Look Limits")]
+    [SerializeField] private float minPitch = -60f;
+    [SerializeField] private float maxPitch = 60f;
 
-    private Vector2 moveInput;
-    private Vector2 lookInput;
-    private bool isSprinting;
+    [Header("Spring Settings")]
+    [SerializeField] private float springStrength = 120f;
+    [SerializeField] private float damping = 20f;
 
-    private Rigidbody rb;
+    private Rigidbody _rb;
 
-    // Rotation
-    private float targetXRotation;
-    private float currentXRotation;
-    private float xVelocity;
-    private float yVelocity;
-    private float targetYaw;
+    // Input
+    private Vector2 _moveInput;
+    private Vector2 _lookInput;
+    private bool _isSprinting;
+
+    // Rotation state
+    private float _yaw;
+    private float _pitch;
+
+    private float _targetYaw;
+    private float _targetPitch;
+
+    private float _yawVelocity;
+    private float _pitchVelocity;
+
+    // ------------------------
+    // INIT
+    // ------------------------
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        _rb = GetComponent<Rigidbody>();
 
-        LockCursor();
-        Application.runInBackground = true; // helps reduce editor FPS drop
+        if (playerBody == null)
+            playerBody = transform;
     }
 
+    private void Start()
+    {
+        LockCursor();
+    }
+
+    // ------------------------
     // INPUT
+    // ------------------------
+
     public void OnMove(InputAction.CallbackContext context)
     {
-        moveInput = context.ReadValue<Vector2>();
+        _moveInput = context.ReadValue<Vector2>();
     }
 
     public void OnLook(InputAction.CallbackContext context)
     {
-        lookInput = context.ReadValue<Vector2>();
+        _lookInput = context.ReadValue<Vector2>();
     }
 
     public void OnSprint(InputAction.CallbackContext context)
     {
-        isSprinting = context.ReadValueAsButton();
+        _isSprinting = context.ReadValueAsButton();
     }
 
-    public void OnJump(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-    }
+    // ------------------------
+    // UPDATE (LOOK + CURSOR)
+    // ------------------------
 
     private void Update()
     {
-        HandleCursorState();
-        HandleMouseLook(Time.deltaTime);
+        HandleCursor();
+        HandleLook();
     }
 
-    private void FixedUpdate()
+    private void HandleCursor()
     {
-        HandleMovement(Time.fixedDeltaTime);
-        ApplyRotation();
-    }
-
-    private void HandleMovement(float dt)
-    {
-        float speed = isSprinting ? sprintSpeed : walkSpeed;
-
-        Vector3 moveDir = transform.right * moveInput.x + transform.forward * moveInput.y;
-        Vector3 step = moveDir * (speed * dt);
-
-        rb.MovePosition(rb.position + step);
-    }
-
-    private void HandleMouseLook(float dt)
-    {
-        float sensitivity = mouseSensitivity * 100f;
-
-        float mouseX = lookInput.x * sensitivity * dt;
-        float mouseY = lookInput.y * sensitivity * dt;
-
-        targetXRotation -= mouseY;
-        targetXRotation = Mathf.Clamp(targetXRotation, -80f, 80f);
-
-        targetYaw += mouseX;
-
-        currentXRotation = Mathf.SmoothDamp(
-            currentXRotation,
-            targetXRotation,
-            ref xVelocity,
-            smoothTime
-        );
-    }
-
-    private void ApplyRotation()
-    {
-        float smoothYaw = Mathf.SmoothDampAngle(
-            rb.rotation.eulerAngles.y,
-            targetYaw,
-            ref yVelocity,
-            smoothTime
-        );
-
-        cameraPivot.localRotation = Quaternion.Euler(currentXRotation, 0f, 0f);
-        rb.MoveRotation(Quaternion.Euler(0f, smoothYaw, 0f));
-    }
-
-    // 🔒 Cursor Handling
-    private void HandleCursorState()
-    {
-        // Click to lock (FPS standard)
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            LockCursor();
-        }
-
-        // Press ESC to unlock
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             UnlockCursor();
         }
-    }
 
-    private void OnApplicationFocus(bool hasFocus)
-    {
-        if (hasFocus)
+        if (Mouse.current.leftButton.wasPressedThisFrame &&
+            Cursor.lockState != CursorLockMode.Locked)
         {
             LockCursor();
         }
     }
+
+    private void HandleLook()
+    {
+        // Disable look when cursor unlocked
+        if (Cursor.lockState != CursorLockMode.Locked)
+            return;
+
+        // Update targets from input
+        _targetYaw += _lookInput.x * lookSensitivity;
+        _targetPitch -= _lookInput.y * lookSensitivity;
+
+        _targetPitch = Mathf.Clamp(_targetPitch, minPitch, maxPitch);
+
+        float dt = Time.deltaTime;
+
+        // --- Yaw spring ---
+        float yawForce = (_targetYaw - _yaw) * springStrength;
+        _yawVelocity += yawForce * dt;
+        _yawVelocity *= Mathf.Exp(-damping * dt);
+        _yaw += _yawVelocity * dt;
+
+        // --- Pitch spring ---
+        float pitchForce = (_targetPitch - _pitch) * springStrength;
+        _pitchVelocity += pitchForce * dt;
+        _pitchVelocity *= Mathf.Exp(-damping * dt);
+        _pitch += _pitchVelocity * dt;
+
+        // Apply rotations
+        playerBody.rotation = Quaternion.Euler(0f, _yaw, 0f);
+        cameraPivot.localRotation = Quaternion.Euler(_pitch, 0f, 0f);
+    }
+
+    // ------------------------
+    // FIXED UPDATE (MOVEMENT)
+    // ------------------------
+
+    private void FixedUpdate()
+    {
+        HandleMovement();
+    }
+
+    private void HandleMovement()
+    {
+        Vector3 input = new Vector3(_moveInput.x, 0f, _moveInput.y);
+
+        if (input.sqrMagnitude < 0.01f)
+            return;
+
+        float speed = _isSprinting
+            ? moveSpeed * sprintMultiplier
+            : moveSpeed;
+
+        Vector3 moveDir =
+            playerBody.forward * input.z +
+            playerBody.right * input.x;
+
+        moveDir.y = 0f;
+        moveDir.Normalize();
+
+        Vector3 movement = moveDir * (speed * Time.fixedDeltaTime);
+
+        _rb.MovePosition(_rb.position + movement);
+    }
+
+    // ------------------------
+    // CURSOR CONTROL
+    // ------------------------
 
     private void LockCursor()
     {
