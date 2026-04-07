@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
 
 public class ShootSequenceValidator : MonoBehaviour
 {
+    public event Action OnValidShot;
+    
     private GoalService _goalService;
     private IScoreService _scoreService;
 
@@ -40,9 +43,9 @@ public class ShootSequenceValidator : MonoBehaviour
         _scoreService?.AddScore(ball.CurrentScore);
 
         if (_ballPlatformMap.TryGetValue(ballObj, out var platform))
-        {
             _goalService?.RegisterGoal(platform);
-        }
+
+        OnValidShot?.Invoke();
 
         ball.ResetScore();
 

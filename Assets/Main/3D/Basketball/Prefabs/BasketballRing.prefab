@@ -79,6 +79,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5644186851603472226}
   - component: {fileID: 6397474253188182163}
+  - component: {fileID: 4688200508338850123}
   m_Layer: 0
   m_Name: BasketballRing
   m_TagString: Untagged
@@ -114,6 +115,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e18a479b5a24e70919c9e0d96ec7b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShootSequenceValidator
+--- !u!114 &4688200508338850123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847248334598103903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5645f3c57a1ca429f9f00bfd7c37fcc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RingController
+  normalBehavior: {fileID: 11400000, guid: 2078a7a6fdd0e45b5aa14e4a31f51840, type: 2}
+  behaviors:
+  - {fileID: 11400000, guid: 7afc8ee33d9294758909f95806490ccf, type: 2}
+  - {fileID: 11400000, guid: 78ac016c2f9644526b83fc368f24e9c9, type: 2}
+  - {fileID: 11400000, guid: 40df8145bc6cc4f59be4c8a98708628f, type: 2}
+  - {fileID: 11400000, guid: 02f958191e4fb48a8884fc479349c4c2, type: 2}
+  - {fileID: 11400000, guid: 2078a7a6fdd0e45b5aa14e4a31f51840, type: 2}
+  - {fileID: 11400000, guid: 2722f59b5960844be9e9e3380f3f8b60, type: 2}
+  - {fileID: 11400000, guid: f3236ce7e316141a0a7ed9a6490095f9, type: 2}
+  - {fileID: 11400000, guid: 5df083bfc35ae4c21a1f42db17ea6f76, type: 2}
+  - {fileID: 11400000, guid: 7716bde1437304446ac75cb413a261f7, type: 2}
+  - {fileID: 11400000, guid: 2078a7a6fdd0e45b5aa14e4a31f51840, type: 2}
+  - {fileID: 11400000, guid: 2078a7a6fdd0e45b5aa14e4a31f51840, type: 2}
+  - {fileID: 11400000, guid: 3c71e94194d5d47c9bc969e58e6bed2c, type: 2}
+  validator: {fileID: 6397474253188182163}
+  playerController: {fileID: 0}
 --- !u!1 &2475592735852321269
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +421,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd78421e25b4242dfae2a31227d181ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RimImpactShake
-  shakeIntensity: 0.25
-  shakeDuration: 0.15
-  shakeFrequency: 25
-  triggerCooldown: 0.1

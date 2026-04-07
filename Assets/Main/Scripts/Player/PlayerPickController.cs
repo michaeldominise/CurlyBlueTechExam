@@ -29,6 +29,7 @@ public class PlayerPickController : MonoBehaviour, IChargeProvider
     [Header("Debug")]
     [SerializeField] private bool enableDebug = false;
 
+    
     private Camera _cam;
 
     private IPickable _currentItem;
@@ -46,6 +47,7 @@ public class PlayerPickController : MonoBehaviour, IChargeProvider
     public event Action<float> OnChargeChanged;
     public event Action OnChargeStart;
     public event Action OnChargeEnd;
+    public event Action OnBallReleased;
 
     private void Awake() => _cam = Camera.main;
 
@@ -143,7 +145,8 @@ public class PlayerPickController : MonoBehaviour, IChargeProvider
         _currentItem?.OnRelease(velocity);
 
         OnChargeEnd?.Invoke();
-
+        OnBallReleased?.Invoke();
+        
         if (enableDebug)
             Debug.Log($"Thrown with force: {force}");
 
