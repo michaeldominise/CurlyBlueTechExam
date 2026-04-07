@@ -56,9 +56,7 @@ public class PlayerInputController : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context)
     {
         if (context.performed)
-        {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
     }
 
     private void Update()

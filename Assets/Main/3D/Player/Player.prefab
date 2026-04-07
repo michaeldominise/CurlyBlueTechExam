@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &137820678794379000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8873832400113698451}
+  m_Layer: 0
+  m_Name: HoldPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8873832400113698451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137820678794379000}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.258819, y: 0, z: 0, w: 0.9659259}
+  m_LocalPosition: {x: 0, y: -0.594, z: 2.088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4517152006871521819}
+  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
 --- !u!1 &177389673165127333
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,6 +60,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8873832400113698451}
   - {fileID: 8200657926137891700}
   m_Father: {fileID: 1946437471111948269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44,6 +76,7 @@ GameObject:
   - component: {fileID: 7654525387143540861}
   - component: {fileID: 5015601923095799756}
   - component: {fileID: 2906153881807504225}
+  - component: {fileID: 7713458981733866047}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -169,6 +202,22 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &7713458981733866047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141333369097500095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7e5fc39435644d1a4e957aeb71b583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraShake
+  defaultDuration: 0.2
+  defaultIntensity: 0.1
+  defaultFrequency: 25
+  shakeInterval: 0.5
 --- !u!1 &8928919636816822642
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,13 +227,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1946437471111948269}
-  - component: {fileID: 2143438304658446107}
-  - component: {fileID: 16608919539190866}
   - component: {fileID: 3493774403229452530}
   - component: {fileID: 2183873697693395701}
+  - component: {fileID: 16608919539190866}
+  - component: {fileID: 2143438304658446107}
+  - component: {fileID: 7365901428338395093}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,24 +255,56 @@ Transform:
   - {fileID: 4517152006871521819}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2143438304658446107
-MonoBehaviour:
+--- !u!54 &3493774403229452530
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8928919636816822642}
+  serializedVersion: 5
+  m_Mass: 10
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!136 &2183873697693395701
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928919636816822642}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8f43fde152f441d8cf58843c185319, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InputController
-  walkSpeed: 5
-  sprintSpeed: 10
-  mouseSensitivity: 2
-  smoothTime: 0.05
-  cameraPivot: {fileID: 4517152006871521819}
-  jumpForce: 5
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &16608919539190866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,58 +394,66 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 9e4a93bc-d702-4ea5-b3cd-7e6dcfb21559
     m_ActionName: 'PlayerControl/Look[/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7365901428338395093}
+        m_TargetAssemblyTypeName: PlayerPickController, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 054dbfad-3e1b-44cc-9684-b88fa28ec6f6
+    m_ActionName: 'PlayerControl/Interact[/Mouse/leftButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerControl
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 7654525387143540861}
---- !u!54 &3493774403229452530
-Rigidbody:
+--- !u!114 &2143438304658446107
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8928919636816822642}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!136 &2183873697693395701
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8928919636816822642}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8f43fde152f441d8cf58843c185319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputController
+  walkSpeed: 5
+  sprintSpeed: 10
+  mouseSensitivity: 2
+  smoothTime: 0.05
+  cameraPivot: {fileID: 4517152006871521819}
+  jumpForce: 50
+--- !u!114 &7365901428338395093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928919636816822642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277d106c6d6714ac48f94a22add2a817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPickController
+  pickDistance: 10
+  pickLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  holdPoint: {fileID: 8873832400113698451}
+  lerpSpeed: 10
+  rotationSpeed: 10
+  minThrowForce: 2
+  maxThrowForce: 20
+  maxHoldTime: 2
+  throwAngleOffsetX: 10
+  enableDebug: 1
